@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Yoga</title>
+    <link rel="stylesheet" href="schedule-template-master/assets/css/style.css">
+    <link rel="stylesheet" href="dist/main.min.css">
+    <link rel="stylesheet" href="src/css/slick.css">
+    <link rel="stylesheet" href="src/css/slick-theme.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=9bc6d5b9-2773-4cd9-854b-cb902c9500ca&lang=ru_RU"
+            type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<section class="main">
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <nav class="menu">
+                <div class="close">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+                                c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+                                c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+                                L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+                                c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+                                c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+                                c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+                        </g>
+                    </g>
+                </svg>
+                </div>
+                <ul>
+                    <li class="menu-item">
+                        <a href="#advantage">О нас</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#teachers">Преподователи</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#service">Услуги</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#studio">Залы</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger" id="burger">
+                <svg id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/>
+                    <path d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/>
+                    <path d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <div class="offer">
+        <div class="container">
+            <div class="offer-info">
+                <h1 class="offer-info-title">
+                    Йога для <span class="title">тела</span> и
+                    <span class="not-space">
+                        <span class="title">души</span> в центре Москвы
+                    </span>
+                </h1>
+                <div class="offer-info-text">
+                    Мы поможем тебе расслабиться, раскрыться творчески, всегда оставаться активной
+                    и&#160;жизнерадостной.
+                </div>
+                <div class="offer-info-action">
+                    <button class="button btn-record wow animate__pulse" id="record" data-wow-iteration="infinite"
+                            data-wow-duration="500ms">Записаться на урок
+                    </button>
+                    <button class="button btn-look" id="look">Посмотреть услуги</button>
+                </div>
+            </div>
+            <div class="offer-img">
+                <img src="images/Shadow.png" alt="girl">
+            </div>
+        </div>
+    </div>
+</section>
+<div class="content">
+    <section class="advantage" id="advantage">
+        <div class="container">
+            <div class="advantage-info ">
+                <div class="advantage-body wow animate__slideInLeft">
+                    <h2 class="advantage-title title">О нас</h2>
+                    <div class="advantage-text">
+                        Добро пожаловать в YogaClub – место для йоги, пространство для души. Для нас практика йоги – это
+                        не
+                        лечебная
+                        физкультура и не мистический ритуал. Мы стараемся донести до широкой аудитории важность дыхания
+                        и
+                        контакта
+                        со своим телом, ценность выработки регулярности в занятиях и необходимость направлять внимание
+                        из
+                        суеты
+                        внешнего мира во внутрь себя.
+                    </div>
+                </div>
+                <div class="advantage-video wow animate__slideInRight">
+                    <iframe src="https://www.youtube.com/embed/-XIhhI7hS54" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="advantage-items wow animate__bounceInUp">
+                <div class="advantage-item">
+                    <div class="advantage-item-title title">200</div>
+                    <div class="advantage-item-text">
+                        часов йоги в неделю с 7 утра до 10 вечера
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-item-title title">100 м2</div>
+                    <div class="advantage-item-text">
+                        уютного пространства йоги
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-item-title title">30</div>
+                    <div class="advantage-item-text">
+                        профессиональных преподавателей
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-item-title title">1000</div>
+                    <div class="advantage-item-text">
+                        чашек травяного чая в неделю
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="teachers" id="teachers">
+        <div class="container">
+            <h2 class="title">
+                Наши преподователи
+            </h2>
+            <div class="teachers-text">
+                Для каждого из наших преподавателей йога – это дело их жизни. Каждый звучит уникально, каждый
+                преподносит
+                свое виденье, но суть остается единой. Мы хотим, чтобы вы нашли гармонию и радовались жизни во всех ее
+                проявлениях. Наши учителя вдохновляют, поддерживают, помогают понять и почувствовать йогу. Приходите
+                знакомиться!
+            </div>
+            <div class="slider">
+                <div class="slick-multiple">
+                    <div class="slider-item">
+                        <div class="slider-image">
+                            <img class="slider-image-teacher teacher-1" src="images/teachers/teacher1.png"
+                                 alt="teacher">
+                        </div>
+                        <div class="slider-info">
+                            <h3 class="slider-title">
+                                Анна Протасова
+                            </h3>
+                            <div class="slider-text">
+                                <span>6</span> лет практики
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-image">
+                            <img class="slider-image-teacher teacher-2" src="images/teachers/teacher2.png"
+                                 alt="teacher">
+                        </div>
+                        <div class="slider-info">
+                            <h3 class="slider-title">
+                                Кристина Лукъянова
+                            </h3>
+                            <div class="slider-text">
+                                <span>8</span> лет практики
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-image">
+                            <img class="slider-image-teacher teacher-3" src="images/teachers/teacher3.png"
+                                 alt="teacher">
+                        </div>
+                        <div class="slider-info">
+                            <h3 class="slider-title">
+                                Анна Протасова
+                            </h3>
+                            <div class="slider-text">
+                                <span>5</span> лет практики
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-image">
+                            <img class="slider-image-teacher teacher-4" src="images/teachers/teacher4.jpg"
+                                 alt="teacher">
+                        </div>
+                        <div class="slider-info">
+                            <h3 class="slider-title">
+                                Яна Маркова
+                            </h3>
+                            <div class="slider-text">
+                                <span>7</span> лет практики
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-image">
+                            <img class="slider-image-teacher teacher-5" src="images/teachers/teacher5.jpg"
+                                 alt="teacher">
+                        </div>
+                        <div class="slider-info">
+                            <h3 class="slider-title">
+                                Вера Темненко
+                            </h3>
+                            <div class="slider-text">
+                                <span>5</span> лет практики
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-image">
+                            <img class="slider-image-teacher teacher-7" src="images/teachers/teacher7.jpeg"
+                                 alt="teacher">
+                        </div>
+                        <div class="slider-info">
+                            <h3 class="slider-title">
+                                Татьяна Лятова
+                            </h3>
+                            <div class="slider-text">
+                                <span>11</span> лет практики
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-image">
+                            <img class="slider-image-teacher teacher-8" src="images/teachers/teacher8.jpeg"
+                                 alt="teacher">
+                        </div>
+                        <div class="slider-info">
+                            <h3 class="slider-title">
+                                Эмма Туркина
+                            </h3>
+                            <div class="slider-text">
+                                <span>5</span> лет практики
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-image">
+                            <img class="slider-image-teacher teacher-9" src="images/teachers/teacher9.jpeg"
+                                 alt="teacher">
+                        </div>
+                        <div class="slider-info">
+                            <h3 class="slider-title">
+                                Зоя Мутова
+                            </h3>
+                            <div class="slider-text">
+                                <span>8</span> лет практики
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service" id="service">
+        <div class="container">
+            <h2 class="title">
+                Наши услуги
+            </h2>
+            <div class="service-items">
+                <div class="service-item">
+                    <div class="service-item-image" style="background-image: url('images/services/service1.png')">
+                        <div class="service-item-info">
+                            <div class="service-item-info-price">От 300 рублей /месяц</div>
+                            <button class="button btn-price-more">Подробнее</button>
+                        </div>
+                    </div>
+                    <h3 class="service-item-title">
+                        Хатха-йога
+                    </h3>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image" style="background-image: url('images/services/service2.png')">
+                        <div class="service-item-info">
+                            <div class="service-item-info-price">От 350 рублей /месяц</div>
+                            <button class="button btn-price-more">Подробнее</button>
+                        </div>
+                    </div>
+                    <h3 class="service-item-title">
+                        Кундалили йога
+                    </h3>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image" style="background-image: url('images/services/service3.png')">
+                        <div class="service-item-info">
+                            <div class="service-item-info-price">От 400 рублей /месяц</div>
+                            <button class="button btn-price-more">Подробнее</button>
+                        </div>
+                    </div>
+                    <h3 class="service-item-title">
+                        Термо-йога
+                    </h3>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image" style="background-image: url('images/services/service4.png')">
+                        <div class="service-item-info">
+                            <div class="service-item-info-price">От 30 рублей /месяц</div>
+                            <button class="button btn-price-more">Подробнее</button>
+                        </div>
+                    </div>
+                    <h3 class="service-item-title">
+                        Йога аштанга
+                    </h3>
+                </div>
+            </div>
+            <div class="service-action">
+                <button class="button btn-timetable" id="btn-timetable">Посмотреть расписание</button>
+            </div>
+        </div>
+    </section>
+    <section class="studio" id="studio">
+        <div class="container">
+            <h2 class="title">
+                Наши студии
+            </h2>
+            <div class="studio-items">
+                <div class="studio-item studio-1 wow animate__fadeInDown">
+                    <div class="studio-item-info">
+                        <div class="studio-item-name">
+                            Yoga Club на Бумажной
+                        </div>
+                        <div class="studio-item-text">
+                            Студия на ул. Бумажной - пространство света и воздуха. Эта маленькая уютная студия открылась
+                            летом 2016 года в мансарде здания на берегу реки Днепр – cветлый лофт с панорамными окнами и
+                            видом на реку.
+                        </div>
+                    </div>
+                    <div class="studio-item-image" style="background-image: url('images/studio1.png')"></div>
+                </div>
+                <div class="studio-item studio-2 wow animate__fadeInDown" data-wow-duration="1s">
+                    <div class="studio-item-info">
+                        <div class="studio-item-name">
+                            Yoga Club на Мясникова
+                        </div>
+                        <div class="studio-item-text">
+                            Наша основная студия была открыта в 2014 году. Сейчас это уже по настоящему большой
+                            йога-центр общей площадью более 400 м кв, который занимает два этажа исторического здания на
+                            ул. Мясникова
+                        </div>
+                    </div>
+                    <div class="studio-item-image" style="background-image: url('images/studio2.png')"></div>
+                </div>
+            </div>
+            <div class="studio-features">
+                <div class="studio-feature wow animate__fadeInLeft" data-wow-delay="0.1s">
+                    <div class="studio-feature-image">
+                        <img src="images/lotus.png" alt="lotus">
+                    </div>
+                    <div class="studio-feature-text">
+                        К нам приходят не только за йогой, но и за уютной атмосферой как дома.
+                    </div>
+                </div>
+                <div class="studio-feature wow animate__fadeInLeft" data-wow-delay="0.2s">
+                    <div class="studio-feature-image">
+                        <img src="images/men.png" alt="men">
+                    </div>
+                    <div class="studio-feature-text">
+                        Мы преданно любим практику йоги, ее уникальную способность объединять тело, ум и душу.
+                    </div>
+                </div>
+                <div class="studio-feature wow animate__fadeInLeft" data-wow-delay="0.3s">
+                    <div class="studio-feature-image">
+                        <img src="images/hands.png" alt="hands">
+                    </div>
+                    <div class="studio-feature-text">
+                        Вы ощутите особую энергетику на наших занятиях.
+                    </div>
+                </div>
+                <div class="studio-feature wow animate__fadeInLeft" data-wow-delay="0.4s">
+                    <div class="studio-feature-image">
+                        <img src="images/prayer.png" alt="hands">
+                    </div>
+                    <div class="studio-feature-text">
+                        Наши студии – это пространство света и воздуха.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="title">Контакты</h2>
+            <div class="contact-body">
+                <div class="record">
+                    <img class="record-img" src="images/flower.png" alt="flower">
+                    <div class="record-text">Первое занятие - скидка 10%</div>
+                    <form class="record-form" action="">
+                        <input type="text" name="name" id="name" placeholder="Ваше имя">
+                        <div class="input-error">Заполните поле с вашем именем</div>
+                        <input type="tel" name="phone" id="phone" placeholder="Ваше телефон">
+                        <div class="input-error">Заполните поле с вашем телефоном</div>
+                        <button class="button btn-record wow animate__shakeX" type="button" id="btn-record">Записаться
+                            на урок
+                        </button>
+                    </form>
+                </div>
+                <div class="map-wrap" id="map-wrap">
+                    <div class="map-block">
+                        <div id="map" class="map"></div>
+                    </div>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-item-title">
+                                Адрес:
+                            </div>
+                            <div class="contact-item-text">
+                                Москва, ул.&#160;Ген&#160;Белова, 26
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-title">
+                                Время работы:
+                            </div>
+                            <div class="contact-item-text">
+                                Ежедневно с&#160;9:00&#160;до&#160;21:00
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-title">
+                                Телефон:
+                            </div>
+                            <div class="contact-item-text">
+                                +912 19 999 99
+                            </div>
+                        </div>
+                        <div class="contact-item network">
+                            <div class="contact-item-title">
+                                Соц сети:
+                            </div>
+                            <div class="contact-icons">
+                                <a href="https://www.instagram.com" target="_blank" class="contact-icon">
+                                    <svg viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M160,128a32,32,0,1,1-32-32A32.03667,32.03667,0,0,1,160,128Zm68-44v88a56.06353,56.06353,0,0,1-56,56H84a56.06353,56.06353,0,0,1-56-56V84A56.06353,56.06353,0,0,1,84,28h88A56.06353,56.06353,0,0,1,228,84Zm-52,44a48,48,0,1,0-48,48A48.05436,48.05436,0,0,0,176,128Zm16-52a12,12,0,1,0-12,12A12,12,0,0,0,192,76Z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://tr-tr.facebook.com/" target="_blank" class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://vk.com/" target="_blank" class="contact-icon">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619 0 0-1.115 2.719-2.695 4.482-.51.513-.743.675-1.021.675-.139 0-.341-.162-.341-.627V6.855c0-.558-.161-.806-.626-.806H9.642c-.348 0-.558.258-.558.504 0 .528.79.65.871 2.138v3.228c0 .707-.127.836-.407.836-.743 0-2.551-2.729-3.624-5.853-.209-.607-.42-.852-.98-.852H2.752c-.627 0-.752.295-.752.619 0 .582.743 3.462 3.461 7.271 1.812 2.601 4.363 4.011 6.687 4.011 1.393 0 1.565-.313 1.565-.853v-1.966c0-.626.133-.752.574-.752.324 0 .882.164 2.183 1.417 1.486 1.486 1.732 2.153 2.567 2.153h2.192c.626 0 .939-.313.759-.931-.197-.615-.907-1.51-1.849-2.569-.512-.604-1.277-1.254-1.51-1.579-.325-.419-.231-.604 0-.976.001.001 2.672-3.761 2.95-5.04z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="footer">
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="logo">
+    </a>
+    <div class="footer-text">
+        Политика конфиденциальности
+    </div>
+    <div class="footer-rights">
+        Все права защищены
+    </div>
+</footer>
+
+<div class="popup-container" id="popup-container">
+    <div class="popup-timetable">
+        <h2 class="text-xl title">Расписание занятий</h2>
+        <div class="close">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+                                c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+                                c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+                                L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+                                c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+                                c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+                                c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+                        </g>
+                    </g>
+                </svg>
+        </div>
+        <div class="cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule">
+            <div class="cd-schedule__timeline">
+                <ul>
+                    <li><span>09:00</span></li>
+                    <li><span>09:30</span></li>
+                    <li><span>10:00</span></li>
+                    <li><span>10:30</span></li>
+                    <li><span>11:00</span></li>
+                    <li><span>11:30</span></li>
+                    <li><span>12:00</span></li>
+                    <li><span>12:30</span></li>
+                    <li><span>13:00</span></li>
+                    <li><span>13:30</span></li>
+                    <li><span>14:00</span></li>
+                    <li><span>14:30</span></li>
+                    <li><span>15:00</span></li>
+                    <li><span>15:30</span></li>
+                    <li><span>16:00</span></li>
+                    <li><span>16:30</span></li>
+                    <li><span>17:00</span></li>
+                    <li><span>17:30</span></li>
+                    <li><span>18:00</span></li>
+                </ul>
+            </div> <!-- .cd-schedule__timeline -->
+
+            <div class="cd-schedule__events">
+                <ul>
+                    <li class="cd-schedule__group">
+                        <div class="cd-schedule__top-info"><span>Monday</span></div>
+
+                        <ul>
+                            <li class="cd-schedule__event">
+                                <a data-start="09:30" data-end="10:30" data-content="event-abs-circuit"
+                                   data-event="event-1" href="#0">
+                                    <em class="cd-schedule__name">Хатха-йога</em>
+                                </a>
+                            </li>
+
+                            <li class="cd-schedule__event">
+                                <a data-start="11:00" data-end="12:30" data-content="event-rowing-workout"
+                                   data-event="event-2" href="#0">
+                                    <em class="cd-schedule__name">Кундалили йога</em>
+                                </a>
+                            </li>
+
+                            <li class="cd-schedule__event">
+                                <a data-start="14:00" data-end="15:15" data-content="event-yoga-1" data-event="event-3"
+                                   href="#0">
+                                    <em class="cd-schedule__name">Термо-йога</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="cd-schedule__group">
+                        <div class="cd-schedule__top-info"><span>Tuesday</span></div>
+
+                        <ul>
+                            <li class="cd-schedule__event">
+                                <a data-start="10:00" data-end="11:00" data-content="event-rowing-workout"
+                                   data-event="event-2" href="#0">
+                                    <em class="cd-schedule__name">Кундалили йога</em>
+                                </a>
+                            </li>
+
+                            <li class="cd-schedule__event">
+                                <a data-start="11:30" data-end="13:00" data-content="event-restorative-yoga"
+                                   data-event="event-4" href="#0">
+                                    <em class="cd-schedule__name">Йога аштанга</em>
+                                </a>
+                            </li>
+
+                            <li class="cd-schedule__event">
+                                <a data-start="13:30" data-end="15:00" data-content="event-abs-circuit"
+                                   data-event="event-1" href="#0">
+                                    <em class="cd-schedule__name">Хатха-йога</em>
+                                </a>
+                            </li>
+
+                            <li class="cd-schedule__event">
+                                <a data-start="15:45" data-end="16:45" data-content="event-yoga-1" data-event="event-3"
+                                   href="#0">
+                                    <em class="cd-schedule__name">Термо-йога</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="cd-schedule__group">
+                        <div class="cd-schedule__top-info"><span>Wednesday</span></div>
+
+                        <ul>
+                            <li class="cd-schedule__event">
+                                <a data-start="09:00" data-end="10:15" data-content="event-restorative-yoga"
+                                   data-event="event-4" href="#0">
+                                    <em class="cd-schedule__name">Йога аштанга</em>
+                                </a>
+                            </li>
+
+                            <li class="cd-schedule__event">
+                                <a data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-3"
+                                   href="#0">
+                                    <em class="cd-schedule__name">Термо-йога</em>
+                                </a>
+                            </li>
+
+                            <li class="cd-schedule__event">
+                                <a data-start="12:00" data-end="13:45" data-content="event-rowing-workout"
+                                   data-event="event-2" href="#0">
+                                    <em class="cd-schedule__name">Кундалили йога</em>
+                                </a>
+                            </li>
+
+                            <li class="cd-schedule__event">
+                                <a data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-3"
+                                   href="#0">
+                                    <em class="cd-schedule__name">Термо-йога</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="cd-schedule__group">
+                        <div class="cd-schedule__top-info"><span>Thursday</span></div>
+
+                        <ul>
+                            <li class="cd-schedule__event">
+                                <a data-start="09:30" data-end="10:30" data-content="event-abs-circuit"
+                                   data-event="event-1" href="#0">
+                                    <em class="cd-schedule__name">Хатха-йога</em>
+                                </a>
+                            </li>
+
+                            <li class="cd-schedule__event">
+                                <a data-start="12:00" data-end="13:45" data-content="event-restorative-yoga"
+                                   data-event="event-4" href="#0">
+                                    <em class="cd-schedule__name">Йога аштанга</em>
+                                </a>
+                            </li>
+
+                            <li class="cd-schedule__event">
+                                <a data-start="15:30" data-end="16:30" data-content="event-abs-circuit"
+                                   data-event="event-1" href="#0">
+                                    <em class="cd-schedule__name">Хатха-йога</em>
+                                </a>
+                            </li>
+
+                            <li class="cd-schedule__event">
+                                <a data-start="17:00" data-end="18:30" data-content="event-rowing-workout"
+                                   data-event="event-2" href="#0">
+                                    <em class="cd-schedule__name">Кундалили йога</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="cd-schedule__group">
+                        <div class="cd-schedule__top-info"><span>Friday</span></div>
+
+                        <ul>
+                            <li class="cd-schedule__event">
+                                <a data-start="10:00" data-end="11:00" data-content="event-rowing-workout"
+                                   data-event="event-2" href="#0">
+                                    <em class="cd-schedule__name">Кундалили йога</em>
+                                </a>
+                            </li>
+
+                            <li class="cd-schedule__event">
+                                <a data-start="12:30" data-end="14:00" data-content="event-abs-circuit"
+                                   data-event="event-1" href="#0">
+                                    <em class="cd-schedule__name">Хатха-йога</em>
+                                </a>
+                            </li>
+
+                            <li class="cd-schedule__event">
+                                <a data-start="15:45" data-end="16:45" data-content="event-yoga-1" data-event="event-3"
+                                   href="#0">
+                                    <em class="cd-schedule__name">Термо-йога</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cd-schedule-modal">
+                <header class="cd-schedule-modal__header">
+                    <div class="cd-schedule-modal__content">
+                        <span class="cd-schedule-modal__date"></span>
+                        <h3 class="cd-schedule-modal__name"></h3>
+                    </div>
+
+                    <div class="cd-schedule-modal__header-bg"></div>
+                </header>
+
+                <div class="cd-schedule-modal__body">
+                    <div class="cd-schedule-modal__event-info"></div>
+                    <div class="cd-schedule-modal__body-bg"></div>
+                </div>
+
+                <a href="#0" class="cd-schedule-modal__close text-replace">Close</a>
+            </div>
+
+            <div class="cd-schedule__cover-layer"></div>
+        </div>
+    </div>
+</div>
+
+<div class="loader">
+    <div class="lds-hourglass"></div>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+// link
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>-->
+<script src="src/scripts/slick.min.js"></script>
+<script>document.getElementsByTagName("html")[0].className += " js";</script>
+<script src="schedule-template-master/assets/js/util.js"></script>
+<script src="schedule-template-master/assets/js/main.js"></script>
+
+<script src="node_modules/wow.js/dist/wow.js"></script>
+// link
+<!--<script src="src/scripts/wow.min.js"></script>-->
+
+
+<script src="src/scripts/main.js"></script>
+</body>
+</html>
