@@ -1,0 +1,21 @@
+{
+  "name": "yoga",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.2.0"
+  },
+  "dependencies": {
+    "gulp-less": "^5.0.0",
+    "jquery": "^3.6.1",
+    "wow.js": "^1.2.2"
+  },
+  "description": ""
+}
